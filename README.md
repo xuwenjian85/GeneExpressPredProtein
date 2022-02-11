@@ -41,7 +41,64 @@ All the omic data are 2D matrices, where columns are samples and rows are genes/
 
 To run the following complete analysis, download the raw data( [upload_raw.tar.gz](https://www.ebi.ac.uk/biostudies/files/S-BSST733/Files/upload_raw.tar.gz) ) or the processed data( [20211022_dict_matrix_20dataset.pkl](https://www.ebi.ac.uk/biostudies/files/S-BSST733/Files/20211022_dict_matrix_20dataset.pkl) ) from here(https://www.ebi.ac.uk/biostudies/studies/S-BSST733)
 
-## Not satisfied? Add new models 
+**Name of datasets**
+
+|    long  | short      |
+| ---- | ---- |
+|colon_86_2014_labelfree|CO_labelfree|
+|brain_71_2017_labelfree|BN_labelfree|
+|prostate_65_2019_labelfree |PR_labelfree|
+|liver_62_2019_labelfree|LV_labelfree|
+|lung_76_2020_labelfree|LU_labelfree|
+|liver_318_2019_tmt|LV_tmt|
+|colon_95_2019_tmt       |   CO_tmt|
+|renal_185_2019_tmt        | RC_tmt|
+|pedbrain_188_2020_tmt|PBN_tmt|
+|breast_122_2020_tmt    |     BR_tmt|
+|uterus_115_2020_tmt   |      EC_tmt|
+|lung_211_2020_tmt       |  LU_1_tmt|
+|lung_89_2020_tmt   |      LU_2_tmt|
+|lung_202_2021_tmt      |   LU_3_tmt|
+|headneck_151_2021_tmt   |     HN_tmt|
+|pancrea_140_2021_tmt    |    PA_tmt|
+|brain_108_2021_tmt        | BN_tmt|
+|breast_77_2016_itraq     |  BR_itraq|
+|ovary_119_2016_itraq      | OV_itraq|
+|stomach_80_2019_itraq|GC_itraq|
+
+## Complete guide to repeat our work
+
+### Model fitting
+
+```shell
+python RNA-Protein_predict_v4.3_explained.py i
+```
+
+Model fitting on dataset *i (i=0~19)*. The step take several days and will output predicted protein values. Predicted result will be saved as a python dictionary named ‘res’. The output file size are up to 25GB. (**Execution time**: The hardware of our computation nodes is AMD EPYC 7742 64-Core CPU 2.25GHz, 1Tb RAM. The whole analysis on 20 benchmarking datasets take 186 days(d) if user run our codes in sequentially. For example, the largest dataset ‘LV_tmt’ (318 samples) take 19d by itself. We recommend user to run each dataset in parallel.)
+
+After the output file is ready, editing a new configure file describing the path of ‘res’ files. Formatted like  res_pkl20211220.list.  
+
+### Performance evaluation
+
+```shell
+python RNA-Protein_predict_v4.3_performance_metric_explained.py i
+```
+
+According to configure file from **model fitting**, compute performance metrics Mean Absolute Error (MAE), Root Mean Squared Error (RMSE) and Pearson’s correlation coefficient (PCC, r) on dataset *i (i=0~19)* . Result will be saved back to the python dictionary named ‘res’ to hard drive.
+
+Editing a new configure file describing the path of updated ‘res’ files. Formatted like res_pkl_metric20211221.list
+
+### Final Analysis
+
+The analysis steps for **Figures and Tables** are shared in **RNA_result_analysis-v3.ipynb** and **RNA-protein_plot_v2-explained.ipynb**. The model named "Voting" is the best model proposed in our paper. Existing methods are "baselineEN", "teamHYU" and "teamHL&YG". 
+
+### Case study on brain atlas transcriptome
+
+Analysis of brain atlas data is done with **RNA-Protein_predict_v3-Brain.ipynb**.  Here we applied the model to the brain
+transcriptome of cerebral cortex regions to infer the protein profile for better understanding the functional
+characteristics of the brain regions. 
+
+## Not satisfied? feel free to add new models 
 
 The module are highly customizable. Just add a new key: value to develop new models!
 
@@ -68,4 +125,3 @@ model_dict = {
     "teamHL&YG": None, 
     }
 ```
-
