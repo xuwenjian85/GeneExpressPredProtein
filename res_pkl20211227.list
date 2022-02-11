@@ -1,0 +1,22 @@
+dataset	resultpkl
+brain_108_2021_tmt	res_v4.3_20211227-1424_merge_brain_108_2021_tmt.pkl
+brain_71_2017_labelfree	res_v4.3_20211221-1443_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_brain_71_2017_labelfree.pkl
+breast_122_2020_tmt	res_v4.3_20211226-0924_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_breast_122_2020_tmt.pkl
+breast_77_2016_itraq	res_v4.3_20211224-0953_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_breast_77_2016_itraq.pkl
+colon_86_2014_labelfree	res_v4.3_20211218-1733_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_colon_86_2014_labelfree.pkl
+colon_95_2019_tmt	res_v4.3_20211221-1931_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_colon_95_2019_tmt.pkl
+liver_62_2019_labelfree	res_v4.3_20211218-1953_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_liver_62_2019_labelfree.pkl
+lung_76_2020_labelfree	res_v4.3_20211218-1751_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_lung_76_2020_labelfree.pkl
+ovary_119_2016_itraq	res_v4.3_20211222-1448_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_ovary_119_2016_itraq.pkl
+pancrea_140_2021_tmt	res_v4.3_20211226-1917_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_pancrea_140_2021_tmt.pkl
+pedbrain_188_2020_tmt	res_v4.3_20211227-1656_merge_pedbrain_188_2020_tmt.pkl
+prostate_65_2019_labelfree	res_v4.3_20211219-2158_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_prostate_65_2019_labelfree.pkl
+renal_185_2019_tmt	res_v4.3_20211227-1705_merge_renal_185_2019_tmt.pkl
+stomach_80_2019_itraq	res_v4.3_20211221-1740_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_stomach_80_2019_itraq.pkl
+uterus_115_2020_tmt	res_v4.3_20211224-2028_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_uterus_115_2020_tmt.pkl
+lung_89_2020_tmt	res_v4.3_20211228-0505_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_lung_89_2020_tmt.pkl
+lung_202_2021_tmt	res_v4.3_20211229-1614_merge_lung_202_2021_tmt.pkl
+lung_211_2020_tmt	res_v4.3_20211229-1626_merge_lung_211_2020_tmt.pkl
+liver_318_2019_tmt	res_v4.3_20211230-1424_merge_liver_318_2019_tmt.pkl
+headneck_151_2021_tmt	res_v4.3_20211231-0008_LR-Lasso-HR-Ridge-SVR-RFR-NN1-NN2-NN3-Stacking-Voting-Boosting-Bagging-baselineEN-teamHYU-teamHL&YG_headneck_151_2021_tmt.pkl
+
