@@ -74,7 +74,7 @@ To run the following complete analysis, download the raw data( [upload_raw.tar.g
 python RNA-Protein_predict_v4.3_explained.py i
 ```
 
-Model fitting on dataset *i (i=0~19)*. The step take several days and will output predicted protein values. Predicted result will be saved as a python dictionary named ‘res’. The output file size are up to 25GB. (**Execution time**: The hardware of our computation nodes is AMD EPYC 7742 64-Core CPU 2.25GHz, 1Tb RAM. The whole analysis on 20 benchmarking datasets take 186 days(d) if user run our codes in sequentially. For example, the largest dataset ‘LV_tmt’ (318 samples) take 19d by itself. We recommend user to run each dataset in parallel.)
+Model fitting on dataset *i (i=0~19)*. The step take several days and will output predicted protein values. Predicted result will be saved as a python dictionary named ‘res’. The output file size are up to 25GB. (**Execution time**: The hardware of our computation nodes is AMD EPYC 7742 64-Core CPU 2.25GHz, 1Tb RAM. The whole analysis on 20 benchmarking datasets take 186 days(d) if user run our codes in sequentially. For example, the largest dataset ‘LV_tmt’ (318 samples) take 19d by itself. The range of execution time on 20 datasets is 2.2~18.9 d. We recommend user to run each dataset in parallel.)
 
 After the output file is ready, editing a new configure file describing the path of ‘res’ files. Formatted like  res_pkl20211220.list.  
 
